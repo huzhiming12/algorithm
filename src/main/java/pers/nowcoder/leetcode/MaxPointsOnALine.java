@@ -1,6 +1,6 @@
 package pers.nowcoder.leetcode;
 
-import pers.nowcoder.leetcode.entity.Point;
+import pers.nowcoder.entity.Point;
 
 import java.util.HashMap;
 

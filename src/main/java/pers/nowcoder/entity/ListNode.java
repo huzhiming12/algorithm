@@ -1,4 +1,4 @@
-package pers.nowcoder.leetcode.entity;
+package pers.nowcoder.entity;
 
 /**
  * Created by huzhiming on 2017/6/17.
@@ -36,4 +36,5 @@ public class ListNode
         }
         System.out.println();
     }
+
 }

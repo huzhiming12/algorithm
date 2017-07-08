@@ -1,6 +1,6 @@
 package pers.nowcoder.leetcode;
 
-import pers.nowcoder.leetcode.entity.ListNode;
+import pers.nowcoder.entity.ListNode;
 
 /**
  * Created by huzhiming on 2017/7/2.

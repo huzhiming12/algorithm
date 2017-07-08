@@ -1,6 +1,6 @@
 package pers.nowcoder.leetcode;
 
-import pers.nowcoder.leetcode.entity.TreeNode;
+import pers.nowcoder.entity.TreeNode;
 
 import java.util.Stack;
 

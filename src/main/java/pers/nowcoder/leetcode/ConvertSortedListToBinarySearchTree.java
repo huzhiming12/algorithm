@@ -1,7 +1,7 @@
 package pers.nowcoder.leetcode;
 
-import pers.nowcoder.leetcode.entity.ListNode;
-import pers.nowcoder.leetcode.entity.TreeNode;
+import pers.nowcoder.entity.ListNode;
+import pers.nowcoder.entity.TreeNode;
 
 /**
  * Created by huzhiming on 2017/6/27.
