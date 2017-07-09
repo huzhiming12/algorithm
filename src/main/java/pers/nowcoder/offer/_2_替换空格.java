@@ -1,5 +1,7 @@
 package pers.nowcoder.offer;
 
+import java.util.Collections;
+
 /**
  * Created by huzhiming on 2017/7/8.
  * Description:
