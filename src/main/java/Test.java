@@ -60,9 +60,7 @@ public class Test
 
         MyCallable callable2 = new MyCallable();
         FutureTask task2 = new FutureTask(callable2);
-        //new Thread(task2).start();
-
-
+        new Thread(task2).start();
         try
         {
             Thread.sleep(2000);

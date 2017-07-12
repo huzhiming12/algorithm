@@ -11,7 +11,6 @@ public class ConsumerAndProducer
     int len = 10;
     //模拟的缓冲区,用于存放生产的商品
     int[] buffer = new int[len];
-
     //in 表示生产放的位置, out表示即将消费的位置
     int in = 0, out = 0;
     //缓冲区中剩下的商品数量
