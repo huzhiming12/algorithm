@@ -9,8 +9,36 @@ package pers.nowcoder.offer;
  */
 public class _53_正则表达式匹配
 {
-    public boolean match(char[] str, char[] pattern)
+    public static boolean match(char[] str, char[] pattern)
     {
+        return dpMatch(str, pattern, 0, 0);
+    }
+
+    public static boolean dpMatch(char[] str, char[] pattern, int i, int j)
+    {
+        if (i >= str.length && j >= pattern.length)
+            return true;
+        if (i < str.length && j >= pattern.length)
+            return false;
+        if (j + 1 < pattern.length && pattern[j + 1] == '*')
+        {
+            if (i < str.length && (pattern[j] == '.' || pattern[j] == str[i]))
+                return dpMatch(str, pattern, i, j + 2)  //匹配0个字符
+                        || dpMatch(str, pattern, i + 1, j + 2) //匹配1个字符
+                        || dpMatch(str, pattern, i + 1, j);// 匹配多个字符
+            else //如果pattern和str 不相等只能匹配0个字符
+                return dpMatch(str, pattern, i, j + 2);  //匹配0个字符
+        }
+        if (i < str.length && (pattern[j] == '.' || pattern[j] == str[i]))
+            return dpMatch(str, pattern, i + 1, j + 1);
         return false;
     }
+
+    public static void main(String[] args)
+    {
+        String str = "ab";
+        String pattern = ".*c";
+        System.out.println(match(str.toCharArray(), pattern.toCharArray()));
+    }
+
 }
