@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * Created by huzhiming on 2017/8/11.
- * Description:
+ * Description: 快速排序
  */
 public class QuickSort
 {
@@ -17,11 +17,11 @@ public class QuickSort
 
     public static void quickSort(int[] arr, int low, int high)
     {
-        int mid = partition(arr, low, high);
-        if (low < mid - 1)
-            quickSort(arr, low, mid - 1);
-        if (mid + 1 < high)
-            quickSort(arr, mid + 1, high);
+        int key = partition(arr, low, high);
+        if (low < key - 1)
+            quickSort(arr, low, key - 1);
+        if (key + 1 < high)
+            quickSort(arr, key + 1, high);
     }
 
     public static int partition(int[] arr, int low, int high)
